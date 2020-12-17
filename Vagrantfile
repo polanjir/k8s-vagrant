@@ -136,9 +136,6 @@ Vagrant.configure("2") do |config|
             else
                 config.vm.provision "shell", inline: $configureWorker
             end
-
         end
-
     end
-
 end 
