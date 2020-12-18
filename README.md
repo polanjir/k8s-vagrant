@@ -8,4 +8,10 @@ Launch a kubernetes:
 
 ```bash
 vagrant up
+
+export KUBECONFIG=$(pwd)/tmp/admin.conf
+
+kubectl cluster-info
+kubectl get node
+kubectl get pod --all-namespaces
 ```
